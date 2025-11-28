@@ -1,3 +1,50 @@
+## Tech Stack (curr)
+
+- Next.js 15 (App Router) with React 19
+
+- Material UI (MUI v7) + Emotion for component styling
+
+- Tailwind CSS v4 with PostCSS
+
+- Google Fonts via next/font
+
+- ESLint + Prettier for linting and formatting
+(Express is listed in dependencies but not currently used by the frontend.)
+
+## Build / Run
+
+- Dev: npm run dev
+
+- Build: npm run build
+
+- Start: npm run start
+
+- Run from the project root (…/CodingProjects/portfolio).
+
+## What’s Already Working
+
+- Next.js App Router structure in place (app/layout.js, app/page.js).
+
+- Global fonts correctly set up through next/font/google.
+
+- Tailwind + PostCSS pipeline installed and functional.
+
+- Basic homepage layout created using MUI Grid, Typography, and a header component.
+
+- ESLint + Prettier operational.
+
+## Current Issues / Tasks Completed
+
+- Hydration errors identified, caused by missing or incorrect MUI SSR ThemeRegistry integration.
+
+- Grid component had incorrect props (size={8} and maxWidth on Grid); fixed with proper MUI layout props.
+
+- Planned cleanup of Tailwind + MUI style overlap and ensuring consistent SSR output.
+
+- Progress made toward adding a proper ThemeProvider / Emotion cache to eliminate hydration mismatches.
+
+
+-----------------------
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
